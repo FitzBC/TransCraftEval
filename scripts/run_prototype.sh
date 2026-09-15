@@ -2,20 +2,28 @@
 set -eu
 
 usage() {
-  echo "Usage: $0 VIDEO_PATH REFERENCE_IMAGE [PERSON_NAME] [PORT]" >&2
+  echo "Usage: $0 [VIDEO_PATH] [REFERENCE_IMAGE] [PERSON_NAME] [PORT]" >&2
   exit 2
 }
 
-[ "$#" -ge 2 ] || usage
+[ "$#" -le 4 ] || usage
 
-video_path=$1
-reference_path=$2
-person_name=${3:-目标人物}
-port=${4:-8765}
 project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+video_path=${1:-$project_dir/examples/sample.mp4}
+reference_path=${2:-$project_dir/examples/reference.jpeg}
+person_name=${3:-目标人物（老许）}
+port=${4:-${FACE_WATCH_PORT:-8765}}
 
 [ -f "$video_path" ] || { echo "Video not found: $video_path" >&2; exit 1; }
 [ -f "$reference_path" ] || { echo "Reference image not found: $reference_path" >&2; exit 1; }
+
+echo "Video: $video_path"
+echo "Reference: $reference_path"
+echo "Person: $person_name"
+
+if [ "${FACE_WATCH_CHECK_ONLY:-0}" = "1" ]; then
+  exit 0
+fi
 
 cd "$project_dir"
 

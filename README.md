@@ -9,10 +9,16 @@
 ```bash
 git clone <repository-url>
 cd TransCraftEval
-./scripts/run_prototype.sh '/path/to/video.mp4' '/path/to/reference.jpg' '人物名称'
+./scripts/run_prototype.sh
 ```
 
-脚本会创建 Python 虚拟环境、安装依赖、下载并校验模型，然后启动服务。打开 <http://127.0.0.1:8765>，点击“开始全视频检索”。需要 Python 3.12+、`curl` 和网络连接（首次下载模型时）。
+零参数启动会直接使用仓库内置的 `examples/sample.mp4`、`examples/reference.jpeg` 和人物标签“目标人物（老许）”。脚本会创建 Python 虚拟环境、安装依赖、下载并校验模型，然后启动服务。打开 <http://127.0.0.1:8765>，点击“开始全视频检索”。需要 Python 3.12+、`curl` 和网络连接（首次下载模型时）。
+
+也可以覆盖任意默认值：
+
+```bash
+./scripts/run_prototype.sh '/path/to/video.mp4' '/path/to/reference.jpg' '人物名称' 8765
+```
 
 如果希望分步启动：
 
@@ -36,6 +42,8 @@ FACE_WATCH_PERSON='人物名称' \
 - 本地静态 Web UI：无需 Node.js 或云端服务
 
 模型文件由 `scripts/download_models.sh` 下载并校验 SHA-256，不提交到仓库。证据输出位于 `artifacts/`。
+
+仓库中的电影片段和人物照片仅作为原型技术测试样例；用于其他环境或对外分发前，请确认拥有相应使用权限。
 
 ## 验证
 
