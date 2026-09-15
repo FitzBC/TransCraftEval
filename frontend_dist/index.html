@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>见证 · 视频人脸检索原型</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient a1"></div><div class="ambient a2"></div>
+    <header>
+      <div class="brand"><span class="brand-mark">◎</span><div><small>FACE WATCH / LOCAL</small><h1>见证</h1></div></div>
+      <div class="privacy">● 本地离线处理 · 不上传云端</div>
+    </header>
+    <main>
+      <aside class="panel input-panel">
+        <div class="section-head"><div><p>01 / 检索输入</p><h2>指定一个人，扫描整段视频</h2></div><span>⌾</span></div>
+        <div class="reference"><img src="/demo/reference" alt="关键人物参考照" /><b>● 单人脸注册照</b></div>
+        <form id="job-form">
+          <label>人物标签<input id="person" required /></label>
+          <label>视频文件路径<input id="video-path" required /></label>
+          <label>参考照片路径<input id="reference-path" required /></label>
+          <button id="submit" type="submit">⌕　开始全视频检索　›</button>
+        </form>
+        <div class="mini"><div><b>逐帧</b><span>检测</span></div><div><b>双阈值</b><span>判定</span></div><div><b>本地</b><span>证据</span></div></div>
+      </aside>
+      <section class="content">
+        <div class="panel video-panel"><p>02 / 原始素材</p><h3>待检索视频</h3><video src="/demo/video" controls preload="metadata"></video></div>
+        <div class="panel results-panel">
+          <div class="result-head"><div><p>03 / 检索结果</p><h2 id="result-title">等待开始分析</h2></div><div id="status" class="status hidden"></div></div>
+          <div id="progress" class="progress-wrap hidden"><div><span>检测、对齐、特征比对</span><span id="progress-label">0%</span></div><i><b id="progress-bar"></b></i></div>
+          <div id="result-body" class="empty">⌾<span>点击“开始全视频检索”，结果会按人物出现时间段聚合。</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
