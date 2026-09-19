@@ -1,0 +1,764 @@
+{
+  "events": [
+    {
+      "event_id": "b537aed10f844ce798c0e81822de0dd6",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 0.0,
+      "end_seconds": 0.0,
+      "support_frames": 1,
+      "best_score": 0.35514,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 0.0,
+      "margin": 0.02658,
+      "topk_score": 0.30085,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/b537aed10f844ce798c0e81822de0dd6.jpg"
+    },
+    {
+      "event_id": "0dbfc9c8929b476b86971afe09d3772d",
+      "person_id": "person.liu_yuru",
+      "person_name": "刘玉茹",
+      "start_seconds": 1.0,
+      "end_seconds": 2.0,
+      "support_frames": 2,
+      "best_score": 0.40032,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 2.0,
+      "margin": 0.12752,
+      "topk_score": 0.40032,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/0dbfc9c8929b476b86971afe09d3772d.jpg"
+    },
+    {
+      "event_id": "7fb85e6a4937451c8e882bf3013bf83c",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 1.0,
+      "end_seconds": 1.0,
+      "support_frames": 1,
+      "best_score": 0.44508,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 1.0,
+      "margin": 0.11997,
+      "topk_score": 0.37512,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/7fb85e6a4937451c8e882bf3013bf83c.jpg"
+    },
+    {
+      "event_id": "867cee12fe8249cb91232b8ef9c5004f",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 2.0,
+      "end_seconds": 2.0,
+      "support_frames": 1,
+      "best_score": 0.38292,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 2.0,
+      "margin": 0.23126,
+      "topk_score": 0.32439,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/867cee12fe8249cb91232b8ef9c5004f.jpg"
+    },
+    {
+      "event_id": "97ece4fb2e834540acfb88e854b83e83",
+      "person_id": "person.zhao_yue",
+      "person_name": "赵越",
+      "start_seconds": 3.0,
+      "end_seconds": 3.0,
+      "support_frames": 1,
+      "best_score": 0.40091,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 3.0,
+      "margin": 0.15903,
+      "topk_score": 0.34721,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/97ece4fb2e834540acfb88e854b83e83.jpg"
+    },
+    {
+      "event_id": "a7ba9877799d45e0b8a8a51fb9992ea7",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 3.0,
+      "end_seconds": 4.0,
+      "support_frames": 2,
+      "best_score": 0.40239,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 3.0,
+      "margin": 0.09734,
+      "topk_score": 0.34088,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/a7ba9877799d45e0b8a8a51fb9992ea7.jpg"
+    },
+    {
+      "event_id": "a1fc2a2bbcb34e7a9a974a55631d8c70",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 5.0,
+      "end_seconds": 5.0,
+      "support_frames": 1,
+      "best_score": 0.35026,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 5.0,
+      "margin": 0.15453,
+      "topk_score": 0.35026,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/a1fc2a2bbcb34e7a9a974a55631d8c70.jpg"
+    },
+    {
+      "event_id": "76c731ec2d444308a41620d2f659b057",
+      "person_id": "person.zhao_yue",
+      "person_name": "赵越",
+      "start_seconds": 6.0,
+      "end_seconds": 6.0,
+      "support_frames": 1,
+      "best_score": 0.42067,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 6.0,
+      "margin": 0.17402,
+      "topk_score": 0.36433,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/76c731ec2d444308a41620d2f659b057.jpg"
+    },
+    {
+      "event_id": "daab803e2ca84503842b739f1ccd56f9",
+      "person_id": "person.liu_yuru",
+      "person_name": "刘玉茹",
+      "start_seconds": 7.0,
+      "end_seconds": 7.0,
+      "support_frames": 1,
+      "best_score": 0.37823,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 7.0,
+      "margin": 0.03929,
+      "topk_score": 0.37823,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/daab803e2ca84503842b739f1ccd56f9.jpg"
+    },
+    {
+      "event_id": "f287f23ccbc34b5f93346dce4b90edae",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 7.0,
+      "end_seconds": 7.0,
+      "support_frames": 1,
+      "best_score": 0.3586,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 7.0,
+      "margin": 0.19855,
+      "topk_score": 0.3586,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/f287f23ccbc34b5f93346dce4b90edae.jpg"
+    },
+    {
+      "event_id": "12550b78856d4a648276b8dd1b77c735",
+      "person_id": "person.zhu_shimao",
+      "person_name": "朱时茂",
+      "start_seconds": 10.0,
+      "end_seconds": 10.0,
+      "support_frames": 1,
+      "best_score": 0.38033,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 10.0,
+      "margin": 0.13285,
+      "topk_score": 0.30518,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/12550b78856d4a648276b8dd1b77c735.jpg"
+    },
+    {
+      "event_id": "74dde8dc22c74eafb13d8c903df6f81f",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 10.0,
+      "end_seconds": 23.0,
+      "support_frames": 14,
+      "best_score": 0.52411,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 12.0,
+      "margin": 0.25312,
+      "topk_score": 0.444,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/74dde8dc22c74eafb13d8c903df6f81f.jpg"
+    },
+    {
+      "event_id": "2c0526901f774cc88cc52534696270c9",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 10.0,
+      "end_seconds": 12.0,
+      "support_frames": 3,
+      "best_score": 0.46236,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 12.0,
+      "margin": 0.1218,
+      "topk_score": 0.46236,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/2c0526901f774cc88cc52534696270c9.jpg"
+    },
+    {
+      "event_id": "5d28ff6debd0482cbfee6d67337d6955",
+      "person_id": "person.zhu_shimao",
+      "person_name": "朱时茂",
+      "start_seconds": 12.0,
+      "end_seconds": 12.0,
+      "support_frames": 1,
+      "best_score": 0.3504,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 12.0,
+      "margin": 0.07912,
+      "topk_score": 0.28117,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/5d28ff6debd0482cbfee6d67337d6955.jpg"
+    },
+    {
+      "event_id": "a607c70686ca4f779e07f91667f42462",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 13.0,
+      "end_seconds": 13.0,
+      "support_frames": 1,
+      "best_score": 0.38187,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 13.0,
+      "margin": 0.03599,
+      "topk_score": 0.29782,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/a607c70686ca4f779e07f91667f42462.jpg"
+    },
+    {
+      "event_id": "ec527ae7da1849d89d576d0636d02b8d",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 14.0,
+      "end_seconds": 14.0,
+      "support_frames": 1,
+      "best_score": 0.38359,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 14.0,
+      "margin": 0.03211,
+      "topk_score": 0.38359,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/ec527ae7da1849d89d576d0636d02b8d.jpg"
+    },
+    {
+      "event_id": "c2c15091573241848224b5cf9ad7ae7e",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 15.0,
+      "end_seconds": 16.0,
+      "support_frames": 2,
+      "best_score": 0.38121,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 16.0,
+      "margin": 0.01919,
+      "topk_score": 0.30817,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/c2c15091573241848224b5cf9ad7ae7e.jpg"
+    },
+    {
+      "event_id": "378e9d6e21814084ac8d7fb337a543a4",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 16.0,
+      "end_seconds": 17.0,
+      "support_frames": 2,
+      "best_score": 0.38495,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 16.0,
+      "margin": 0.1131,
+      "topk_score": 0.3261,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/378e9d6e21814084ac8d7fb337a543a4.jpg"
+    },
+    {
+      "event_id": "30eccd40e10a4708965250458e1e2e59",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 17.0,
+      "end_seconds": 17.0,
+      "support_frames": 1,
+      "best_score": 0.41631,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 17.0,
+      "margin": 0.06985,
+      "topk_score": 0.41631,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/30eccd40e10a4708965250458e1e2e59.jpg"
+    },
+    {
+      "event_id": "aeb7e991acd142a3b746bb14153014a9",
+      "person_id": "person.zhao_yue",
+      "person_name": "赵越",
+      "start_seconds": 17.0,
+      "end_seconds": 17.0,
+      "support_frames": 1,
+      "best_score": 0.35332,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 17.0,
+      "margin": 0.00908,
+      "topk_score": 0.306,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/aeb7e991acd142a3b746bb14153014a9.jpg"
+    },
+    {
+      "event_id": "4a625b8c35c54d6c9fbf01159180fc81",
+      "person_id": "person.zhu_shimao",
+      "person_name": "朱时茂",
+      "start_seconds": 18.0,
+      "end_seconds": 19.0,
+      "support_frames": 2,
+      "best_score": 0.36319,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 18.0,
+      "margin": 0.14936,
+      "topk_score": 0.29143,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/4a625b8c35c54d6c9fbf01159180fc81.jpg"
+    },
+    {
+      "event_id": "1d79dbd6ab3948bebe603bac70525e20",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 18.0,
+      "end_seconds": 19.0,
+      "support_frames": 2,
+      "best_score": 0.38158,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 18.0,
+      "margin": 0.04916,
+      "topk_score": 0.28735,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/1d79dbd6ab3948bebe603bac70525e20.jpg"
+    },
+    {
+      "event_id": "856d6e5f999f4c628371c73596d09fc6",
+      "person_id": "person.liu_yuru",
+      "person_name": "刘玉茹",
+      "start_seconds": 18.0,
+      "end_seconds": 18.0,
+      "support_frames": 1,
+      "best_score": 0.39697,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 18.0,
+      "margin": 0.05857,
+      "topk_score": 0.39697,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/856d6e5f999f4c628371c73596d09fc6.jpg"
+    },
+    {
+      "event_id": "3437c61ee315413a9d13322da08d21ba",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 19.0,
+      "end_seconds": 20.0,
+      "support_frames": 2,
+      "best_score": 0.37384,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 20.0,
+      "margin": 0.04493,
+      "topk_score": 0.3167,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/3437c61ee315413a9d13322da08d21ba.jpg"
+    },
+    {
+      "event_id": "fc175bc508684ad6afa190b81201027a",
+      "person_id": "person.shangguan_yunzhu",
+      "person_name": "上官云珠",
+      "start_seconds": 19.0,
+      "end_seconds": 19.0,
+      "support_frames": 1,
+      "best_score": 0.36397,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 19.0,
+      "margin": 0.03401,
+      "topk_score": 0.30833,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/fc175bc508684ad6afa190b81201027a.jpg"
+    },
+    {
+      "event_id": "6f87280b043c4037bad7a609d85e0c16",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 20.0,
+      "end_seconds": 22.0,
+      "support_frames": 3,
+      "best_score": 0.4704,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": true,
+      "evidence_seconds": 22.0,
+      "margin": 0.15395,
+      "topk_score": 0.4704,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/6f87280b043c4037bad7a609d85e0c16.jpg"
+    },
+    {
+      "event_id": "ec37e6f96eb244eb8015c51e48e81e31",
+      "person_id": "person.liu_yuru",
+      "person_name": "刘玉茹",
+      "start_seconds": 22.0,
+      "end_seconds": 22.0,
+      "support_frames": 1,
+      "best_score": 0.3764,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 22.0,
+      "margin": 0.03927,
+      "topk_score": 0.3764,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/ec37e6f96eb244eb8015c51e48e81e31.jpg"
+    },
+    {
+      "event_id": "ed3d1a3345fe43ad9982e251afbd70f8",
+      "person_id": "person.liu_yuru",
+      "person_name": "刘玉茹",
+      "start_seconds": 22.0,
+      "end_seconds": 22.0,
+      "support_frames": 1,
+      "best_score": 0.35407,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 22.0,
+      "margin": 0.03884,
+      "topk_score": 0.35407,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/ed3d1a3345fe43ad9982e251afbd70f8.jpg"
+    },
+    {
+      "event_id": "b6896f97678b4bdd8403a01c76e82cba",
+      "person_id": "person.shu_xiuwen",
+      "person_name": "舒绣文",
+      "start_seconds": 23.0,
+      "end_seconds": 23.0,
+      "support_frames": 1,
+      "best_score": 0.4685,
+      "review_status": "pending",
+      "note": "",
+      "history": [],
+      "ambiguous": false,
+      "evidence_seconds": 23.0,
+      "margin": 0.18793,
+      "topk_score": 0.4685,
+      "evidence_image": "/bundled/evidence/98fae24cc3b410f3/b6896f97678b4bdd8403a01c76e82cba.jpg"
+    }
+  ],
+  "metrics": {
+    "sampled_frames": 24,
+    "detected_faces": 251,
+    "raw_hits": 53,
+    "decoded_frames": 600,
+    "expected_frames": 600,
+    "duration_seconds": 24.0,
+    "sample_seconds": 1.0,
+    "coverage_complete": true,
+    "elapsed_seconds": 4.85
+  },
+  "reference_snapshot": [
+    {
+      "person_id": "person.zhao_benshan",
+      "name": "赵本山",
+      "reference_count": 1,
+      "reference_hashes": [
+        "9a246434ce05d1590adc31edc76f8b6bd6dea522ee66106baebf793411db742f"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-9a246434ce05d1590adc31edc76f8b6bd6dea522ee66106baebf793411db742f.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.zhu_shimao",
+      "name": "朱时茂",
+      "reference_count": 2,
+      "reference_hashes": [
+        "8e0c58905903a72f5c86a39632be3de3b2cba7629ebb8021b1dea80f5b319b0e",
+        "86c3ba4590e88e8d5bde710a7bf6d325e33c8ea66edf6f8db3f2ec4a08411d69"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-8e0c58905903a72f5c86a39632be3de3b2cba7629ebb8021b1dea80f5b319b0e.jpeg"
+        },
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-86c3ba4590e88e8d5bde710a7bf6d325e33c8ea66edf6f8db3f2ec4a08411d69.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.jackie_chan",
+      "name": "成龙",
+      "reference_count": 1,
+      "reference_hashes": [
+        "cdd385cda5133da2f98ff4882b03e59f2943596017e64ad9a60b247c81b90804"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-cdd385cda5133da2f98ff4882b03e59f2943596017e64ad9a60b247c81b90804.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.gong_li",
+      "name": "巩俐",
+      "reference_count": 2,
+      "reference_hashes": [
+        "e7256e1e374ed88d2e67def0aa7e5b22d246950b46ad35526911803906e02ea8",
+        "02ae2784273daa2d81cee98bfafd4bd9964f786573cc28334a55daf3812b41fb"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-e7256e1e374ed88d2e67def0aa7e5b22d246950b46ad35526911803906e02ea8.jpg"
+        },
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-02ae2784273daa2d81cee98bfafd4bd9964f786573cc28334a55daf3812b41fb.jpg"
+        }
+      ],
+      "rejected_references": [
+        {
+          "filename": "cc32fae8e567d771dc4217b3f1120389e3cf6a7c91003c74cd681669e60075ec.jpg",
+          "reason": "参考图须包含一张可检测人脸",
+          "detected_faces": 3
+        },
+        {
+          "filename": "793b5ac2b8e82788e4a31b6fec40717a52318a28e70b996b15a52766df9cb338.jpg",
+          "reason": "参考图须包含一张可检测人脸",
+          "detected_faces": 3
+        }
+      ]
+    },
+    {
+      "person_id": "person.shangguan_yunzhu",
+      "name": "上官云珠",
+      "reference_count": 2,
+      "reference_hashes": [
+        "d6d6fd05a8aec3e817bedfe5daf573bfc5a298ce4cf53f908d7d7bf518aa9acb",
+        "9cad012efbb17e407fcc4afbb95ddd6f5974d1e9d23846f9e60b173582db7c1f"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-d6d6fd05a8aec3e817bedfe5daf573bfc5a298ce4cf53f908d7d7bf518aa9acb.jpg"
+        },
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-9cad012efbb17e407fcc4afbb95ddd6f5974d1e9d23846f9e60b173582db7c1f.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.shu_xiuwen",
+      "name": "舒绣文",
+      "reference_count": 1,
+      "reference_hashes": [
+        "d7470c423162b793914d3116bb86d4a680643f334f31b1209b57fdbfa3f34a88"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-d7470c423162b793914d3116bb86d4a680643f334f31b1209b57fdbfa3f34a88.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.yang_likun",
+      "name": "杨丽坤",
+      "reference_count": 1,
+      "reference_hashes": [
+        "b25a2795e946f9130d61f0da908d8c7b2565fd888aea1c53424bc5ef264eee29"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-b25a2795e946f9130d61f0da908d8c7b2565fd888aea1c53424bc5ef264eee29.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.wang_suya",
+      "name": "王苏娅",
+      "reference_count": 1,
+      "reference_hashes": [
+        "3db70ce54541c5a9a8fa16f6402f80d4a652816e20ca2da9586ff74274953fca"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-3db70ce54541c5a9a8fa16f6402f80d4a652816e20ca2da9586ff74274953fca.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.guo_lanying",
+      "name": "郭兰英",
+      "reference_count": 1,
+      "reference_hashes": [
+        "370d82a01bdac83e4a7f09f8300c98a4ded36bc27400ec5a420e8da1f9e57576"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-370d82a01bdac83e4a7f09f8300c98a4ded36bc27400ec5a420e8da1f9e57576.jpg"
+        }
+      ],
+      "rejected_references": [
+        {
+          "filename": "c4a80729a572c6a4c64d13983cdc2f10131b31732438c163dbe59db2c2b80659.jpg",
+          "reason": "参考图须包含一张可检测人脸",
+          "detected_faces": 3
+        }
+      ]
+    },
+    {
+      "person_id": "person.liu_yuru",
+      "name": "刘玉茹",
+      "reference_count": 1,
+      "reference_hashes": [
+        "38089e88a249abeac566b938aa75105f3b0137aab226b91087a859e6c592675f"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-38089e88a249abeac566b938aa75105f3b0137aab226b91087a859e6c592675f.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.zhang_weixin",
+      "name": "张伟欣",
+      "reference_count": 1,
+      "reference_hashes": [
+        "ae8f8b3fa36a305d43acc94b8dc0a0a7e125ad72be6ebbdf2b3d98b4997c9557"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-ae8f8b3fa36a305d43acc94b8dc0a0a7e125ad72be6ebbdf2b3d98b4997c9557.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.zhao_yue",
+      "name": "赵越",
+      "reference_count": 2,
+      "reference_hashes": [
+        "0e3ffde5d4b6d3befa02dded27ad0b530847251bc5bfe871702035a060401b0c",
+        "a70df6ccf400982fc89b27786525c127aab08bc2774080f3fce1e257a2431715"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-0e3ffde5d4b6d3befa02dded27ad0b530847251bc5bfe871702035a060401b0c.jpg"
+        },
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-a70df6ccf400982fc89b27786525c127aab08bc2774080f3fce1e257a2431715.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.deng_yuhua",
+      "name": "邓玉华",
+      "reference_count": 1,
+      "reference_hashes": [
+        "94da2bced4eb10a795b1e0a7e723737afbef683f0b3549b7d9c6e2d6f33c14a6"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-94da2bced4eb10a795b1e0a7e723737afbef683f0b3549b7d9c6e2d6f33c14a6.jpg"
+        }
+      ],
+      "rejected_references": []
+    },
+    {
+      "person_id": "person.tao_jin",
+      "name": "陶金",
+      "reference_count": 2,
+      "reference_hashes": [
+        "41e08e99d5a19cc1dc70157d63674f5fae5cdbdc4722c50ec59017028baf205f",
+        "83ed72793750a5accbcf2b48f603b27e5fb57185a8bdaaa07496fbb80f300c3a"
+      ],
+      "materials": [
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-41e08e99d5a19cc1dc70157d63674f5fae5cdbdc4722c50ec59017028baf205f.jpg"
+        },
+        {
+          "kind": "reference_image",
+          "local_uri": "/bundled/evidence/98fae24cc3b410f3/reference-83ed72793750a5accbcf2b48f603b27e5fb57185a8bdaaa07496fbb80f300c3a.jpg"
+        }
+      ],
+      "rejected_references": []
+    }
+  ],
+  "method": "YuNet + SFace / 多图候选召回 / 空间与外观短时关联",
+  "validation_note": "候选尚未经独立标注；无法据此计算召回率。"
+}

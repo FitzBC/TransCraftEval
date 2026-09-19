@@ -12,9 +12,26 @@ from .opencv_analyzer import AnalyzerConfig, OpenCvAnalyzer
 def build_app() -> FastAPI:
     project_root = Path(__file__).resolve().parents[2]
     artifact_dir = project_root / "artifacts"
-    video_path = Path(os.getenv("FACE_WATCH_VIDEO", ""))
-    reference_path = Path(os.getenv("FACE_WATCH_REFERENCE", ""))
-    person_name = os.getenv("FACE_WATCH_PERSON", "测试人物（老许）")
+    showcase = os.getenv('FACE_WATCH_PROFILE') == 'showcase'
+    bundle = project_root/'showcase_bundle'
+    seed, catalog = None, None
+    if showcase:
+        seed, catalog = {'library_items':[], 'review_tasks':[]}, []
+        # Preserve the catalog for workspaces created before explicit import existed.
+        if (project_root/'data/showcase/state.json').is_file() and (bundle/'seed.json').is_file():
+            from .showcase import load_bundle
+            try:
+                _, catalog = load_bundle(bundle)
+            except (OSError, ValueError, KeyError):
+                pass
+        artifact_dir = artifact_dir/'showcase'
+    video_path = Path(
+        os.getenv("FACE_WATCH_VIDEO") or project_root / "examples" / "sample.mp4"
+    )
+    reference_path = Path(
+        os.getenv("FACE_WATCH_REFERENCE") or project_root / "examples" / "reference.jpeg"
+    )
+    person_name = os.getenv("FACE_WATCH_PERSON", "朱时茂（许灵均）")
     analyzer = OpenCvAnalyzer(
         AnalyzerConfig(
             detector_model=project_root / "models/face_detection_yunet_2023mar.onnx",
@@ -28,6 +45,7 @@ def build_app() -> FastAPI:
         )
     )
     defaults = {
+        'profile': 'showcase' if showcase else 'local',
         "video_path": str(video_path) if video_path.is_file() else "",
         "reference_image_path": str(reference_path) if reference_path.is_file() else "",
         "person_name": person_name,
@@ -43,6 +61,11 @@ def build_app() -> FastAPI:
         artifact_dir=artifact_dir,
         defaults=defaults,
         demo_media=demo_media,
+        state_file=project_root / 'data' / ('showcase/state.json' if showcase else 'media_review_state.json'),
+        seed_state=seed,
+        bundled_dir=bundle if showcase and bundle.is_dir() else None,
+        media_catalog=catalog,
+        setup_enabled=showcase,
     )
 
 
