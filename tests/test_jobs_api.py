@@ -178,6 +178,130 @@ def test_web_ui_can_load_demo_defaults() -> None:
     }
 
 
+def test_prototype_exposes_governed_library_and_real_task_overview(tmp_path: Path) -> None:
+    client = TestClient(create_app())
+    asset = tmp_path / "movie.mp4"
+    asset.write_bytes(b"video")
+
+    library = client.get("/api/library-items")
+    created = client.post(
+        "/api/review-tasks",
+        json={
+            "name": "样片审核",
+            "asset_path": str(asset),
+            "object_ids": ["person.zhao_benshan"],
+        },
+    )
+    overview = client.get("/api/overview")
+
+    assert library.status_code == 200
+    assert any(item["item_id"] == "person.zhao_benshan" for item in library.json())
+    assert created.status_code == 201
+    assert created.json()["status"] == "ready"
+    assert overview.status_code == 200
+    assert overview.json()["task_count"] == 1
+    assert overview.json()["tasks"][0]["name"] == "样片审核"
+    people = client.get("/api/library-items?category=person")
+    assert people.status_code == 200
+    assert all(item["category"] == "person" for item in people.json())
+
+
+def test_user_can_add_a_library_item_without_overwriting_existing_one() -> None:
+    client = TestClient(create_app())
+    payload = {
+        "item_id": "person.example_actor",
+        "category": "person",
+        "name": "示例演员",
+        "aliases": ["示例别名"],
+        "definition": "待接入授权参考图与独立测试媒资。",
+        "status": "ready_for_material",
+    }
+
+    created = client.post("/api/library-items", json=payload)
+    duplicate = client.post("/api/library-items", json=payload)
+
+    assert created.status_code == 201
+    assert created.json() == {
+        **payload,
+        "classification": "未分类",
+        "materials": [],
+    }
+    assert duplicate.status_code == 409
+
+
+def test_person_library_item_exposes_attributable_reference_materials() -> None:
+    client = TestClient(create_app())
+
+    response = client.get("/api/library-items/person.jackie_chan/materials")
+
+    assert response.status_code == 200
+    assert len(response.json()) == 3
+    assert response.json()[0]["material_id"] == "ref.jackie_chan.locarno_2025"
+    assert response.json()[0]["status"] == "pending_validation"
+
+
+def test_user_can_append_a_second_reference_to_a_library_object() -> None:
+    client = TestClient(create_app())
+    material = {
+        "material_id": "ref.jackie_chan.validation_2",
+        "kind": "reference_image",
+        "title": "成龙补充参考图",
+        "local_uri": "/assets/references/jackie-chan-validation-2.jpg",
+        "quality_note": "本地单脸候选参考图。",
+        "status": "pending_validation",
+    }
+
+    created = client.post(
+        "/api/library-items/person.jackie_chan/materials", json=material
+    )
+    duplicate = client.post(
+        "/api/library-items/person.jackie_chan/materials", json=material
+    )
+    materials = client.get("/api/library-items/person.jackie_chan/materials")
+
+    assert created.status_code == 201
+    assert created.json() == material
+    assert duplicate.status_code == 409
+    assert [item["material_id"] for item in materials.json()] == [
+        "ref.jackie_chan.locarno_2025",
+        "ref.jackie_chan.2007",
+        "ref.jackie_chan.2016",
+        "ref.jackie_chan.validation_2",
+    ]
+
+
+def test_zhu_shimao_local_demo_material_is_available_for_validation(tmp_path: Path) -> None:
+    reference = tmp_path / "zhu-shimao.jpeg"
+    reference.write_bytes(b"reference")
+    client = TestClient(create_app(demo_media={"reference": reference}))
+
+    response = client.get("/api/library-items/person.zhu_shimao/materials")
+
+    assert response.status_code == 200
+    assert len(response.json()) == 2
+    assert response.json()[:1] == [
+        {
+            "material_id": "ref.zhu_shimao.local_demo",
+            "kind": "reference_image",
+            "title": "朱时茂正面参考照（本地 Demo）",
+            "local_uri": "/demo/reference",
+            "quality_note": "447×447；单人正面清晰照，作为《牧马人》本地 Demo 的检索参考输入。",
+            "status": "pending_validation",
+        }
+    ]
+
+
+def test_gong_li_has_multiple_local_front_reference_images() -> None:
+    client = TestClient(create_app())
+
+    response = client.get("/api/library-items/person.gong_li/materials")
+
+    assert response.status_code == 200
+    assert len(response.json()) == 4
+    assert all(material["local_uri"] for material in response.json())
+    assert response.json()[-1]["title"] == "巩俐戛纳近景（2011，视角二）"
+
+
 def test_web_ui_can_preview_configured_demo_media(tmp_path: Path) -> None:
     video = tmp_path / "movie.mp4"
     reference = tmp_path / "person.png"
